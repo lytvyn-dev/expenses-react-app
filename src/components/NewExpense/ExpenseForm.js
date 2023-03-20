@@ -26,6 +26,9 @@ export default function ExpenseForm(props) {
       amount: enteredAmount,
     };
 
+    //hide form
+    props.onHideForm();
+
     // send data to parent as argument
     props.onSaveExpenses(expensesData);
 
@@ -51,6 +54,9 @@ export default function ExpenseForm(props) {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button type="button" onClick={props.onHideForm}>
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>

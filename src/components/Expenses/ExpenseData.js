@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./ExpenseData.css";
 
 export default function ExpenceData(props) {
